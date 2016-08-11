@@ -1,0 +1,32 @@
+body {
+	background-position: relative;
+	background-image:url('/images/tree.jpg');	
+	background-size: 100% 100%;
+    background-attachment: fixed;
+    opacity: 40%;
+}
+
+h{
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 45px;
+	position: relative;
+	top: 15px;
+	left: 400px;
+	background-color: #808080;
+}
+
+.button {
+    background-color:#4CAF50;
+    border: none;
+    color: black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+}

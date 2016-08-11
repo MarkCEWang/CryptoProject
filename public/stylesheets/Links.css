@@ -1,0 +1,107 @@
+body {
+	background-position: relative;
+	background-image:url('/images/geese.jpg');	
+	background-size: 100% 100%;
+    background-attachment: fixed;
+    opacity: 60%;
+}
+
+h{
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 45px;
+	position: fixed;
+	top: 0px;
+	left: 500px;
+	background-color: #808080;
+}
+
+.button {
+    background-color:yellow;
+    border: none;
+    color: black;
+    border: 1.5px solid red;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
+div.vid1{
+	position: fixed;
+	margin: 0px;
+	border: none;
+	float: left;
+	width:400px;
+	left: 50px;
+	top: 70px;
+}
+
+div.vid2 {
+	position: fixed;
+    margin: 0px;
+    border: none;
+    float: left;
+    float: top;
+    width: 400px;
+    left: 500px;
+    top: 70px;
+}
+
+div.vid3 {
+	position: fixed;
+    margin: 0px;
+    border: none;
+    float: left;
+    width: 400px;
+    left: 50px;
+    top: 320px;
+}
+
+div.vid1 img {
+    width: 100%;
+    height: auto;
+}
+
+div.vid2 img {
+    width: 100%;
+    height: auto;
+}
+
+div.vid3 img {
+	
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 6px;
+    text-align: left;
+}
+
+ ul {
+	font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+	font-size:12px;
+	color: black;
+	opacity: 1;
+	margin-top : 5px;
+}
+
+p {
+	font-size: 16px;
+	color: white;
+}
+div.links{
+	position: fixed;
+	margin: 0px;
+    border: none;
+    float: left;
+    width: 400px;
+    left: 500px;
+    top: 320px;
+    border:2px solid yellow;
+    background-color: white;
+    opacity: 0.6;
+}

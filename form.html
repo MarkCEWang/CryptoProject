@@ -1,0 +1,40 @@
+<fieldset>
+
+<p>Generate keys:</p>
+<a href="genkey">
+    <input type="submit" value="Generate keys" />
+</a>
+</fieldset>
+<fieldset>
+<legend>Sign and verify</legend>
+<form action="/upload" enctype="multipart/form-data" method="post">
+<p>Please upload the file you want to sign/verify:</p>
+ 
+<input type="file" name="file" id="file"/>
+<br><br>
+
+  Key (Public or private):
+<input type="text" name="key">
+<br><br>
+  Signature to Verify:
+<input type="text" name="signature">
+<br>
+<input type="submit" formaction="sign" name="sumbited_file" value="Sign">
+<input type="submit" formaction="verify" name="verify_file" value="Verify">
+</form>
+
+
+
+</fieldset>
+
+<h3>How to Sign a file: </h3>
+<p class="usage"> 1. First click on "Generate Keys" to create a public key and a private key. Make sure to save it.</p>
+<p class="usage"> 2. Next click on "choose file" to upload the file you want to sign, and copy your private key to the "Key" section <p>
+<p class="usage"> 3. Copy your private key and paste it into the Key section. When you click on "Sign", you should now see the signature</p>
+
+<br>
+<h3>How to verify the signature of a given file</h3>
+<p class="usage"> 1. First you should upload the file using the "Choose File" button.</p>
+<p class="usage"> 2. Next fill in both the signature section and the Key section (USE PUBLIC KEY IN THIS CASE!!)</p>
+<p class="usage"> 3. When you click on "Verify", you should see Yes if the file has the correct signature.</p>
+

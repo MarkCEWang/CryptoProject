@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./stylesheets/HTML_CSS.css">
+<link rel="icon" href="acgirl.png" type="image/png" />
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="./javascripts/script.js" ></script>
+<title><%= title %></title>
+</head>
+<body>
+	<div class = "col">
+		<div class= "top">
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick='showMenu()'>
+			      <div class='small-menu hide'>
+			      		<div id='options'><a href="/Contact.html">Contact us</a></div>
+			      		<div id='contact'><a href="/DesignersInfo.html">Designer's Information</a></div>
+			      		<div id='home'><a href ="/Links.html">Related Links</a></div>
+			      </div>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        <li ><a href="/Contact.html">Contact Us</a></li>
+			        <li >
+			          <a  >Option </a>
+			      
+			        </li>
+			        <li><a href="/DesignersInfo.html">Designer Information</a></li>
+			        <li><a href="/Links.html">Related Links</a></li>
+			      </ul>
+			  </div>
+			</nav>
+		</div>
+
+	</div>
+<img src="./images/cryptography2.png" alt="cryp pic" style="max-width:100%;height:auto;">
+<h1 id="x1"><strong></strong><%= title %></strong></h1>
+
+<div class='row'>
+	<div class='col-lg-4 col-md-4 col-sm-4 col-xs-4 menu'>
+		<div><a href="/introduction"><strong>Introduction</strong></a></div>
+		<div><a href="/history"><strong>History</strong></a></div>
+		
+		<div><a href="/what-is-ecdsa"><strong>What is ECDSA</strong></a></div>
+		<div><a href="/ecdsa"><strong>ECDSA Signing</strong></a></div>
+		<div><a href="/what-is-hash"><strong>What is Hash</strong></a></div>
+		<div><a href="/what-is-rsa"><strong>What is RSA</strong></a></div>
+		<div><a href="/rsa"><strong>Sample RSA Algorithm</strong></a></div>
+		
+	</div>
+	<div class='col-lg -8 col-md-8 col-sm-8 col-xs-8 main'>
+		<%- content %>
+	</div>
+</div>
+
+</body>
+</html>

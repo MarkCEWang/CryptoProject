@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset ="utf-8">
+<title>Contact Form</title>
+<link rel="stylesheet" type="text/css" href="./stylesheets/Contact.css">
+<link rel="icon" href="acgirl.png" type="image/png" />
+<script src="contactFcn.js">
+</script>
+</head>
+<body>
+<h>Contact Us</h>
+<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);">
+<input name="skip_WhereToSend" type="hidden" value="w345wang@uwaterloo.ca" />
+<input name="skip_SnapHostID" type="hidden" value="X4CFR3BMM2YD" />
+<input name="skip_WhereToReturn" type="hidden" value="file:///Users/LemonSprite/Downloads/ECDSA/index.html" />
+<input name="skip_Subject" type="hidden" value="Contact Us Form" />
+<input name="skip_ShowUsersIp" type="hidden" value="1" />
+<input name="skip_SendCopyToUser" type="hidden" value="1" />
+<table border="0" cellpadding="30" cellspacing="5" width="600">
+<tr>
+<td><b id="name">Name*:</b></td>
+<td><input id = "nf" name="Name" type="text" maxlength="70" style="width:350px;" /></td>
+</tr><tr>
+<td><b id="phone">Phone number:</b></td>
+<td><input id = "pf" name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
+</tr><tr>
+<td><b id="email">Email address*:</b></td>
+<td><input id= "fea"name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b id="caq">Comments and questions*:</b></td>
+<td><textarea id = "comment" name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+</tr><tr>
+<td colspan="2" align="center"> <br />
+<table border="0" cellpadding="10" cellspacing="0">
+<tr><td colspan="2" style="padding-bottom:18px;">
+
+<tr valign="top"><td> <i>Enter web form code*:</i>
+<input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
+</td><td>
+<img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
+style="margin-left:20px;"
+src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=X4CFR3BMM2YD&ImgType=2" /><br />
+<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
+</table> <br />
+* - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input name="skip_Submit" type="submit" value="Submit" />
+</td></tr>
+</table><br />
+</form>
+</body>
+</html>

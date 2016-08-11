@@ -1,0 +1,135 @@
+.top{
+    background-color: #4CAF50;
+    height:72px;
+    font-size:25px;
+    text-align: center;
+    line-height: 25px
+}
+.top div{cursor:pointer;}
+.menu{
+    background-color:skyblue;
+    height:700px;
+    font-size:25px;
+    text-align:center;
+    line-height:55px;
+}
+#introduction, #history ,#about{
+    display:none;
+    font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+}
+.menu div{
+    border-radius:50px;
+    margin:0 20px 0 20px;
+}
+.button {
+    background-color:#4CAF50;
+    border: none;
+    color: white;
+    position: relative;
+    top:10px;
+    right: 44px;
+    width: 20px;
+    padding: 17px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
+*{transition:all 0.5s ease;font-family:'Ubuntu', serif;}
+.menu div{cursor:pointer;}
+.menu div:hover{color:orange;background-color:white;}
+.main{
+    font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+    border:2px solid red;
+    height:700px;
+    background-image:url("./public/images789209-disney-wallpaper.jpg");
+    background-size:100% 100%;
+    font-size:20px;
+    width:100%;
+    color:black;
+}
+p {
+	color:#FFFFFF;
+	background-color:lightblue;
+	font-weight:bold;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float:left;
+    cursor: pointer;
+}
+
+li a {
+    font-family: Lucida Bright, Georgia, serif;
+    display: block;
+    text-decoration: none;
+	color: white;
+    text-align: center;
+	background-color:#000000;
+    padding: 16px 18px;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover: {
+    background-color: #111;
+    transition: all 0.3s;
+}
+/*
+form{
+	margin-left:0px;
+}
+*/
+#x1 {
+    background-image: url('./public/images/jGlzr.png');
+    background-position: right bottom;
+    background-repeat: repeat-x;
+    padding: 15px;
+}
+</style>
+<script>
+	function nav(ele){
+	hideAll();
+	document.getElementById(ele).style.display = 'block';
+}
+function hideAll(){
+	document.getElementById('introduction').style.display = 'none';
+	document.getElementById('history').style.display = 'none';
+	document.getElementById('usage').style.display = 'none';
+	document.getElementById('ecdsa').style.display = 'none';
+	document.getElementById('sample ecdsa').style.display = 'none';
+	document.getElementById('hash').style.display = 'none';
+	document.getElementById('rsa').style.display = 'none';
+	document.getElementById('sample rsa').style.display = 'none';
+	document.getElementById('about').style.display = 'none';
+}
+
+function doOnClick(){
+	document.getElementById('switchBtn').style.color = 'red';
+	return false;
+}
+
+function clickValue(){
+	var x = "ECDSA";
+	if(document.getElementById('switchBtn').style.color == 'red'){
+		x = "RSA";
+	} else {
+		x = "ESDSA"
+	}
+	return x;
+}
